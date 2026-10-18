@@ -41,8 +41,13 @@ test('wire payloads match the original for every mode and extended options', asy
       assert.equal(received.job.params.downloadSubfolder,'flow-behind');
       delete received.client;
       received.job.params.downloadSubfolder = '<brand-folder>';
-      received.imagePaths = received.imagePaths.map(p => p.replace(root.replace(/[\\/]$/, ''), '<cwd>'));
-      assert.deepEqual(received,scenario.expected);
+      // The original fixture was captured on Windows; compare path semantics
+      // consistently on Linux CI without changing any other payload fields.
+      const portablePath = p => p.replaceAll('\\', '/');
+      received.imagePaths = received.imagePaths.map(p => portablePath(p.replace(root.replace(/[\\/]$/, ''), '<cwd>')));
+      const expected = structuredClone(scenario.expected);
+      expected.imagePaths = expected.imagePaths.map(portablePath);
+      assert.deepEqual(received,expected);
     });
   }
 });

@@ -27,10 +27,12 @@ The CLI is `flow-behind`. One binary drives the extension; nothing else needs in
 
 ## Step 0 — Bootstrap
 
-1. Run `flow-behind status --site flow`. The bridge daemon auto-starts on first use.
+1. Run `flow-behind status --site flow`. Status is read-only; generation starts the
+   bridge automatically. To start it explicitly, run `flow-behind bridge start`
+   in another terminal.
    - First time in a session it reports `extension (flow): connected` — say so once, don't repeat it later.
    - `flow-behind: command not found` means the CLI is not installed on this
-     machine. Install it and nothing else: `npm install -g . (from the local flow-behind-cli folder)`
+     machine. Install it with `npm install --global flow-behind-cli`.
      (needs Node.js 20+; if `npm` is missing too, the user installs Node from
      https://nodejs.org and opens a NEW terminal). Then re-run the check.
 2. If it prints `NOT CONNECTED`, or anything at all looks wrong later, run:

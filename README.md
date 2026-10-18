@@ -1,6 +1,7 @@
 # Flow Behind CLI
 
 [![CI](https://github.com/behindofficial/flow-behind-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/behindofficial/flow-behind-cli/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/flow-behind-cli.svg)](https://www.npmjs.com/package/flow-behind-cli)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -26,12 +27,40 @@ tools. See [the feature map](docs/FEATURE_PARITY.md) and
 | Requirement | When it is needed |
 | --- | --- |
 | Node.js 20+ and npm | All CLI and MCP commands |
-| Git | Cloning this repository |
+| Git | Only for installing from source |
 | Compatible Flow Connector browser extension | Driving Google Flow through Chrome or Edge |
 | Signed-in Google Flow session | Generating media; keep the browser window visible |
 | FFmpeg and ffprobe | Optional local media merging and cleaning |
 
-## Install from GitHub
+## Install with npm
+
+With Node.js 20 or newer installed, run:
+
+```sh
+npm install --global flow-behind-cli
+flow-behind --version
+flow-behind --help
+```
+
+This installs both `flow-behind` and `flow-behind-mcp`. The npm package includes
+the built CLI, MCP server and agent skill; no Git clone or build step is needed.
+Connect the browser extension using the steps below before generating media.
+
+To update later:
+
+```sh
+npm install --global flow-behind-cli@latest
+```
+
+You can also run a command without a global install:
+
+```sh
+npx --yes --package flow-behind-cli flow-behind --help
+```
+
+Package: [flow-behind-cli on npm](https://www.npmjs.com/package/flow-behind-cli).
+
+## Install from GitHub (development)
 
 Run these commands in PowerShell, Terminal or your preferred shell:
 
@@ -53,8 +82,8 @@ node bin/flow-behind.mjs --help
 node bin/flow-behind.mjs status --site flow
 ```
 
-The package has not been published to npm. Use this repository checkout or a generated
-`.tgz`; do not assume `npm install -g flow-behind-cli` downloads this project.
+Use the npm installation above for normal use. A checkout is useful for editing
+the source, running tests or building a local `.tgz` with `npm pack`.
 
 ## Browser connection
 
@@ -135,7 +164,7 @@ change the fact that media is AI-generated.
 
 ## MCP
 
-After the optional global install, configure an MCP client with:
+After the npm global install, configure an MCP client with:
 
 ```json
 {

@@ -5,7 +5,10 @@
   "type": "module",
   "license": "MIT",
   "author": "Flow Behind",
-  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "bin": {
     "flow-behind": "bin/flow-behind.mjs",
     "flow-behind-mcp": "bin/flow-behind-mcp.mjs"

@@ -73,8 +73,9 @@ same names, so global installations do not overwrite `flow-auto`.
 
 Existing history is not silently migrated or overwritten. `FLOW_BEHIND_HOME`
 allows choosing another state location; README describes copying legacy data.
-The npm package is private/unpublished locally; branded release checking is
-configurable rather than pointed at an invented company endpoint.
+The npm package is configured for public publication as `flow-behind-cli`.
+It includes generated bundles while Git tracks the editable source and command
+entry scripts. Branded release checking remains configurable.
 
 ## Verification
 
