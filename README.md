@@ -199,7 +199,15 @@ npm run check
 npm pack
 ```
 
-Edit `src/`, then rebuild. `dist/` contains runnable bundles and source maps.
+Edit `src/`, then rebuild. `dist/` contains generated runnable bundles and source
+maps; it is ignored by Git and created locally by `npm run build`.
+
+`bin/` contains the two hand-written Node.js entry scripts registered as CLI
+commands in `package.json`, so it is kept in source control. A distributable
+package needs both `bin/` and `dist/`: `npm pack` runs the `prepack` build and
+includes them through the package's explicit `files` list. Dependencies, logs,
+test output and package archives are excluded from the repository.
+
 Tests use temporary state directories and a simulated extension on random ports;
 they do not submit real Google Flow generations. FFmpeg tests create short local
 fixtures. LaMa model inference and real browser generation require separate live
