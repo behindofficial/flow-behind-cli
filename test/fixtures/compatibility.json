@@ -1,0 +1,893 @@
+{
+  "source": "flow-connector-cli 1.0.9",
+  "scenarios": [
+    {
+      "name": "text-to-video",
+      "args": [
+        "generate",
+        "create",
+        "text-to-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "text-to-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "frame-to-video",
+      "args": [
+        "generate",
+        "create",
+        "frame-to-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "frame-to-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "ingredients-to-video",
+      "args": [
+        "generate",
+        "create",
+        "ingredients-to-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "ingredients-to-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "text-to-image",
+      "args": [
+        "generate",
+        "create",
+        "text-to-image",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "text-to-image",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "image-to-image",
+      "args": [
+        "generate",
+        "create",
+        "image-to-image",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "image-to-image",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-text-to-image",
+      "args": [
+        "generate",
+        "create",
+        "flow-text-to-image",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-text-to-image",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-image-to-image",
+      "args": [
+        "generate",
+        "create",
+        "flow-image-to-image",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-image-to-image",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-text-to-video",
+      "args": [
+        "generate",
+        "create",
+        "flow-text-to-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-text-to-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-frame-to-video",
+      "args": [
+        "generate",
+        "create",
+        "flow-frame-to-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-frame-to-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-ingredients-to-video",
+      "args": [
+        "generate",
+        "create",
+        "flow-ingredients-to-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-ingredients-to-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-video-to-video",
+      "args": [
+        "generate",
+        "create",
+        "flow-video-to-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json",
+        "--video",
+        "sample.mp4",
+        "--model",
+        "omni-flash"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-video-to-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "imageModel": "omni-flash",
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": [
+          "<cwd>\\sample.mp4"
+        ]
+      }
+    },
+    {
+      "name": "flow-create-character",
+      "args": [
+        "generate",
+        "create",
+        "flow-create-character",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-create-character",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-set-voice",
+      "args": [
+        "generate",
+        "create",
+        "flow-set-voice",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-set-voice",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-extend-video",
+      "args": [
+        "generate",
+        "create",
+        "flow-extend-video",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-extend-video",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-rename-asset",
+      "args": [
+        "generate",
+        "create",
+        "flow-rename-asset",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json",
+        "--asset",
+        "Old name",
+        "--name",
+        "New name"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-rename-asset",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true,
+            "characterName": "New name"
+          },
+          "inputImages": [],
+          "assetRefs": [
+            "Old name"
+          ],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    },
+    {
+      "name": "flow-upload-assets",
+      "args": [
+        "generate",
+        "create",
+        "flow-upload-assets",
+        "--prompt",
+        "A lighthouse at sunrise",
+        "--json",
+        "--image",
+        "sample.png",
+        "second.jpg"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "A lighthouse at sunrise",
+          "mode": "flow-upload-assets",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": [
+          "<cwd>\\sample.png",
+          "<cwd>\\second.jpg"
+        ]
+      }
+    },
+    {
+      "name": "full-video-options",
+      "args": [
+        "generate",
+        "create",
+        "flow-ingredients-to-video",
+        "--prompt",
+        "test",
+        "--image",
+        "sample.png",
+        "--asset",
+        "Scene",
+        "--character",
+        "Hero",
+        "--aspect-ratio",
+        "9:16",
+        "--duration",
+        "6",
+        "--resolution",
+        "360p",
+        "--model",
+        "omni-flash",
+        "--outputs",
+        "4",
+        "--new-project",
+        "--batch",
+        "8",
+        "--speed",
+        "6",
+        "--delay",
+        "10-15",
+        "--image-delay",
+        "2-3",
+        "--extend",
+        "2",
+        "--extend-prompt",
+        "continues",
+        "--step",
+        "beat one",
+        "beat two",
+        "--index",
+        "4",
+        "--name",
+        "Hero",
+        "--character-info",
+        "curious",
+        "--voice",
+        "Algenib",
+        "--voice-style",
+        "gentle",
+        "--voice-name",
+        "Narrator",
+        "--body",
+        "red coat",
+        "--json"
+      ],
+      "expected": {
+        "job": {
+          "prompt": "test",
+          "mode": "flow-ingredients-to-video",
+          "params": {
+            "aspectRatio": "9:16",
+            "videoOption": "6s",
+            "videoResolution": "480p",
+            "autoExtendCount": 2,
+            "extendPrompt": "continues",
+            "extendSteps": [
+              "beat one",
+              "beat two"
+            ],
+            "imageModel": "omni-flash",
+            "outputsPerPrompt": 4,
+            "newProject": true,
+            "batchOutputs": 8,
+            "speed": 6,
+            "delayMinSec": 10,
+            "delayMaxSec": 15,
+            "imageDelayMinSec": 2,
+            "imageDelayMaxSec": 3,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true,
+            "characterName": "Hero",
+            "characterInfo": "curious",
+            "voiceName": "Algenib",
+            "voiceStyle": "gentle",
+            "voiceSaveAs": "Narrator",
+            "bodyPrompt": "red coat"
+          },
+          "inputImages": [],
+          "assetRefs": [
+            "Scene"
+          ],
+          "characterRefs": [
+            "Hero"
+          ],
+          "batchIndex": 4
+        },
+        "imagePaths": [
+          "<cwd>\\sample.png"
+        ]
+      }
+    },
+    {
+      "name": "stdin",
+      "args": [
+        "generate",
+        "create",
+        "flow-text-to-image",
+        "--json"
+      ],
+      "input": "A prompt from stdin",
+      "expected": {
+        "job": {
+          "prompt": "A prompt from stdin",
+          "mode": "flow-text-to-image",
+          "params": {
+            "aspectRatio": "16:9",
+            "autoExtendCount": 0,
+            "outputsPerPrompt": 1,
+            "downloadVideoQuality": "720p",
+            "downloadImageQuality": "1k",
+            "downloadSubfolder": "<brand-folder>",
+            "autoRenameFiles": true
+          },
+          "inputImages": [],
+          "assetRefs": [],
+          "characterRefs": []
+        },
+        "imagePaths": []
+      }
+    }
+  ],
+  "help": [
+    {
+      "args": [],
+      "flags": [
+        "--version",
+        "--port",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "bridge"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "bridge",
+        "start"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "doctor"
+      ],
+      "flags": [
+        "--site",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "status"
+      ],
+      "flags": [
+        "--site",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "stop"
+      ],
+      "flags": [
+        "--site",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "queue"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "queue",
+        "clear"
+      ],
+      "flags": [
+        "--site",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "modes"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate",
+        "create"
+      ],
+      "flags": [
+        "--prompt",
+        "--image",
+        "--video",
+        "--asset",
+        "--character",
+        "--aspect-ratio",
+        "--duration",
+        "--resolution",
+        "--model",
+        "--outputs",
+        "--new-project",
+        "--batch",
+        "--speed",
+        "--delay",
+        "--image-delay",
+        "--delay",
+        "--extend",
+        "--extend-prompt",
+        "--step",
+        "--folder",
+        "--index",
+        "--name",
+        "--character-info",
+        "--voice",
+        "--voice-style",
+        "--voice-name",
+        "--body",
+        "--wait",
+        "--wait-timeout",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate",
+        "list"
+      ],
+      "flags": [
+        "--json",
+        "--failed",
+        "--all",
+        "--run",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate",
+        "get"
+      ],
+      "flags": [
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate",
+        "wait"
+      ],
+      "flags": [
+        "--timeout",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate",
+        "cancel"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate",
+        "runs"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "generate",
+        "resume"
+      ],
+      "flags": [
+        "--dry-run",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "reload-extension"
+      ],
+      "flags": [
+        "--site",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "merge"
+      ],
+      "flags": [
+        "--output",
+        "--fast",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "clean"
+      ],
+      "flags": [
+        "--output",
+        "--mark",
+        "--mode",
+        "--cut",
+        "--box",
+        "--logo",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "skill"
+      ],
+      "flags": [
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "skill",
+        "install"
+      ],
+      "flags": [
+        "--dir",
+        "--json",
+        "--help"
+      ]
+    },
+    {
+      "args": [
+        "skill",
+        "list"
+      ],
+      "flags": [
+        "--help"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+*.tgz
+__pycache__/
+.test-output/
+*.log
+package-manifest.json
+.env
+.env.*
+!.env.example
